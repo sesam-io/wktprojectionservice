@@ -1,0 +1,9 @@
+chameleon>=2.15
+nose
+pygeoif
+pyproj==1.9.4
+pyramid>=1.5
+pyramid_chameleon
+pyyaml
+rdflib>=4.1.2
+requests

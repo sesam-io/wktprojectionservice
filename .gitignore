@@ -1,0 +1,4 @@
+.idea/*
+wktprojectionservice/__pycache__/*
+wktprojectionservice/.idea/*
+wktprojectionservice/*.pyc

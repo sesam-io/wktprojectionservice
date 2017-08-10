@@ -1,0 +1,25 @@
+# Where to run
+port: 6543
+interface": "0.0.0.0"
+
+# Target system (must be a SDShare Push Receiver)
+endpoint: http://localhost:9001/api/sinks/test-sink/entities
+
+# Default graph, empty means post back to same graph as we get in the request. NB! Be careful, this can lead
+# to infinite loops if you don't use a sink that support fragment deltas.
+graph: ""
+
+# Coordinate systems
+sourceCoordinateSystem: "EPSG:32632"
+targetCoordinateSystem: "EPSG:4326"
+
+# Switch the coordinates in each pair of the polygons
+switch_x_y: False
+switch_x_y_out: False
+
+# Source predicates
+sourceGeometry: "https://example.com/etrs89"
+
+# Target predicates
+targetGeometry: "http://example.com/wgs84_pos#lat_long"
+targetDatatype: "http://www.openlinksw.com/schemas/virtrdf#Geometry"
